@@ -5,6 +5,10 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import "react-loading-skeleton/dist/skeleton.css";
 import axios from "axios";
+import dynamic from "next/dynamic";
+
+const PWAPromptWrapper = dynamic(() => import("@/components/PWAPromptWrapper"), { ssr: false });
+
 
 export const revalidate = 3600;
 

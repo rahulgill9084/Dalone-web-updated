@@ -200,6 +200,8 @@ const Layout = ({ children }) => {
                 <Footer />
             </PushNotificationLayout>
           )}
+          <PWAInstallPrompt />
+
           <ScrollToTopButton />
         </>
       )}
