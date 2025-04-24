@@ -1,6 +1,7 @@
 import HomePage from '@/components/Home';
 import Layout from '@/components/Layout/Layout';
 import axios from 'axios';
+import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 
 export const revalidate = 3600;
 
@@ -137,6 +138,7 @@ const index = async () => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Layout>
         <HomePage />
+        <PWAInstallPrompt />
       </Layout>
     </>
   )
